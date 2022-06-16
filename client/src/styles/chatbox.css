@@ -1,0 +1,39 @@
+.chatBox {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+  margin: 20px 10px;
+  height: 80%;
+  min-width: 800px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 238);
+  overflow: auto;
+}
+.chatBox::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chatBox {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.messageNode,
+.messageNodeOwner {
+  background-color: antiquewhite;
+  margin: 10px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.parentOwner {
+  display: flex;
+  justify-content: flex-end;
+}
+.parent {
+  display: flex;
+  justify-content: flex-start;
+}
